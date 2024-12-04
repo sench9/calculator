@@ -1,0 +1,87 @@
+@media (max-width: 600px) {
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
+        /* Adjust to three columns */
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b0e57c;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: linear-gradient(to bottom, #4caf50, #ffeb3b, #ff5722);
+    /* Green to yellow to red-orange gradient */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    /* White background for display */
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+    transform: scale(0.9);
+    /* Slightly enlarge button on hover */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* Define rows */
+    gap: 10px;
+}
+
+.button-zero {
+    grid-column: span 2;
+    /* Make the "0" button span two columns */
+}
+
+.button-equal {
+    background-color: #66ff66;
+    /* Green for equal */
+}
+
+.button-clear {
+    background-color: #ff6666;
+    /* Red for clear */
+}
+
+.calculator-title {
+    text-align: left;
+    color: black;
+    margin-bottom: 10px;
+    /* Space between title and display */
+    font-size: 24px;
+    /* Increase the font size */
+    font-weight: bold;
+    /* Make the title bold */
+}

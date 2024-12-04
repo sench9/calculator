@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h2 class="calculator-title">HTML CALCULATOR</h2>
+        <div class="result-area">
+            <input type="text" id="display" disabled aria-label="Calculator display">
+        </div>
+        <div class="buttons">
+            <button class="button-clear" onclick="clearDisplay()" aria-label="Clear">C</button>
+            <button class="button-delete" onclick="deleteLast()" aria-label="Delete last character">DEL</button>
+            <button onclick="appendToDisplay('*')" aria-label="Multiply">x</button>
+            <button onclick="appendToDisplay('/')" aria-label="Divide">/</button>
+            <button onclick="appendToDisplay('1')" aria-label="Number one">1</button>
+            <button onclick="appendToDisplay('2')" aria-label="Number two">2</button>
+            <button onclick="appendToDisplay('3')" aria-label="Number three">3</button>
+            <button onclick="appendToDisplay('+')" aria-label="Add">+</button>
+            <button onclick="appendToDisplay('4')" aria-label="Number four">4</button>
+            <button onclick="appendToDisplay('5')" aria-label="Number five">5</button>
+            <button onclick="appendToDisplay('6')" aria-label="Number six">6</button>
+            <button onclick="appendToDisplay('-')" aria-label="Subtract">-</button>
+            <button onclick="appendToDisplay('7')" aria-label="Number seven">7</button>
+            <button onclick="appendToDisplay('8')" aria-label="Number eight">8</button>
+            <button onclick="appendToDisplay('9')" aria-label="Number nine">9</button>
+            <button class="button-equal" onclick="calculateResult()" aria-label="Calculate result">=</button>
+            <button onclick="appendToDisplay('0')" class="button-zero" aria-label="Number zero">0</button>
+            <button onclick="appendToDisplay('.')" class="button-dot" aria-label="Decimal point">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
